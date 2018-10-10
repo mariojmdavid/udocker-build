@@ -22,7 +22,7 @@ Instantiate the container, mounting the github repository, and running
 the pyinstaller to build a single executable of udocker
 
 ```
-docker run -v $PWD/udocker:/home/udocker mariojmdavid/udocker-build pyinstaller -F -D udocker/udocker.py
+docker run -v $PWD/udocker:/home/udocker -w /home/udocker/udocker  mariojmdavid/udocker-build pyinstaller -D -F udocker.py
 ```
 
 
