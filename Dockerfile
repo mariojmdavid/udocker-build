@@ -3,7 +3,7 @@ LABEL maintainer="Mario David <mariojmdavid@gmail.com>"
 
 RUN yum -y update && \
     yum -y install epel-release && \
-    mkdir -o /home/udocker 
+    mkdir -p /home/udocker 
 
 RUN yum -y update && \
     yum -y install curl git wget tar python34 && \
